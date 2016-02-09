@@ -8,6 +8,8 @@ third_party_settings:
   menu_ui:
     available_menus: {  }
     parent: ''
+_core:
+  default_config_hash: '-7gmfiXastU0HonGdhi8JL1oTGo5WH90Z608wVBY4sA'
 name: Band
 type: band
 description: 'A content type representing a band.'

@@ -4,6 +4,8 @@ status: true
 dependencies:
   config:
     - node.type.band
+_core:
+  default_config_hash: 6j12tLl0wgXaUDZwj2hxti_8uaVLwYe5PCTz8iRX36o
 id: node.band.promote
 field_name: promote
 entity_type: node
@@ -14,7 +16,7 @@ required: false
 translatable: true
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: 'On'

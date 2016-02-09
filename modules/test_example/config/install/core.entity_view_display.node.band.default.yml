@@ -7,6 +7,8 @@ dependencies:
     - node.type.band
   module:
     - user
+_core:
+  default_config_hash: S9keMhS5Z_XWb4Q557-IwtvLG5--MHHtYcQjwlLc2P4
 id: node.band.default
 targetEntityType: node
 bundle: band

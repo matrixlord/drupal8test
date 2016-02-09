@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_members
     - node.type.band
     - node.type.member
+_core:
+  default_config_hash: Wz0gI_OkE615hXcv0OOwpa_mrBE-tvR_b0N0uQ7EmSI
 id: node.band.field_members
 field_name: field_members
 entity_type: node
