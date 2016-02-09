@@ -1,0 +1,19 @@
+uuid: 3fff79fa-8619-4a95-b400-0d75253b4a51
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+_core:
+  default_config_hash: QsD2-mTCgwGlqNO0czNinMyquZVYcCzc5HPmHKwzJ9E
+name: Member
+type: member
+description: 'A content representing a band member.'
+help: ''
+new_revision: false
+preview_mode: 0
+display_submitted: false

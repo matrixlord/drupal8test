@@ -1,0 +1,25 @@
+uuid: 13555c20-fea1-4ade-bd04-4e9bf1a8452b
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: 1
+is_admin: false
+permissions:
+  - 'access content'
+  - 'use text format basic_html'
+  - 'access comments'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'access site-wide contact form'
+  - 'access shortcuts'
+  - 'search content'
+  - 'create band content'
+  - 'delete own band content'
+  - 'edit own band content'
+  - 'create member content'
+  - 'delete own member content'
+  - 'edit own member content'

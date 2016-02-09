@@ -1,0 +1,5 @@
+name: Test Example Module
+type: module
+description: 'A module containing a test.'
+package: Other
+core: 8.x

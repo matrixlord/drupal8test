@@ -1,0 +1,12 @@
+uuid: 47c95302-a6aa-4c56-a400-e76e73061227
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - th.nokas@gmail.com
+reply: ''
+weight: 0

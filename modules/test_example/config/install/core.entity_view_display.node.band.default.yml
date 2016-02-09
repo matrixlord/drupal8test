@@ -1,0 +1,24 @@
+uuid: eaeab07a-8b58-426c-8102-2b635c686b80
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.band.field_members
+    - node.type.band
+  module:
+    - user
+id: node.band.default
+targetEntityType: node
+bundle: band
+mode: default
+content:
+  field_members:
+    weight: 101
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

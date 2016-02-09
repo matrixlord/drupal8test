@@ -1,0 +1,17 @@
+uuid: d789cc1d-c920-4639-9160-9669e6471fad
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - node.type.band
+  module:
+    - user
+id: node.band.teaser
+targetEntityType: node
+bundle: band
+mode: teaser
+content:
+  links:
+    weight: 100
+hidden: {  }
