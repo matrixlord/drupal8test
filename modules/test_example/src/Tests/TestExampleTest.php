@@ -7,7 +7,7 @@
 namespace Drupal\test_example\Tests;
 
 use Drupal\simpletest\WebTestBase;
-use Drupal\simpletest\TestBase;
+use \Drupal\node\Entity\Node;
 
 
 /**
@@ -24,15 +24,21 @@ class TestExampleTest extends WebTestBase {
    */
   public static $modules = array('test_example');
 
-  
+  protected function setUp() {
+    parent::setUp();
+
+    // Import configuration.
+//    $this->createContentType(array());
+  }
 
   /**
    *  User can create, edit and delete band and members nodes.
    */
   function testContentPermissions() {
 
+    // Assert content type exists.
 
     // Create band member.
-//    $node = \Drupal\node\Entity\Node::create(array('type' => 'members', 'title' => 'Eminem'));
+    $node = \Drupal\node\Entity\Node::create(array('type' => 'members', 'title' => 'Eminem'));
   }
 }
