@@ -4,3 +4,15 @@
  * @file
  * Test example module.
  */
+
+use \Drupal\Core\Access\AccessResult;
+
+function test_example_node_create_access(\Drupal\Core\Session\AccountInterface $account, array $context, $entity_bundle) {
+
+//  if ($entity_bundle == 'member') {
+//    // Deny.
+//    return AccessResult::forbidden();
+//  }
+
+  return AccessResult::neutral();
+}

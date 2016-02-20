@@ -36,11 +36,25 @@ class TestExampleTest extends WebTestBase {
    */
   function testContentPermissions() {
 
-    // Create User.
-    $user = $this->createUser(array('create simpletest_example content'));
+    // Create users.
+    $user_permissions = $this->createUser(array(
+      'create band content',
+      'delete own band content',
+      'edit own band content',
+      'create member content',
+      'delete own member content',
+      'edit own member content',
+    ));
+    $user_naked = $this->createUser();
 
-    // Create band member.
-    $node = \Drupal\node\Entity\Node::create(array('type' => 'members', 'title' => 'Eminem'));
-    debug($node->nid);
+    // Login user with permissions and check.
+    $this->drupalLogin($user_permissions);
+    $this->drupalGet('node/add/member');
+    $this->assertResponse(200, 'User 1 can create member.');
+
+    // Login user without permissions and check.
+    $this->drupalLogin($user_naked);
+    $this->drupalGet('node/add/member');
+    $this->assertResponse(403, 'User 2 cannot create member.');
   }
 }
