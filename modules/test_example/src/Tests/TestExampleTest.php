@@ -24,21 +24,23 @@ class TestExampleTest extends WebTestBase {
    */
   public static $modules = array('test_example');
 
-  protected function setUp() {
-    parent::setUp();
-
-    // Import configuration.
-//    $this->createContentType(array());
-  }
+  /**
+   * The installation profile to use with this test.
+   *
+   * @var string
+   */
+  protected $profile = 'standard';
 
   /**
    *  User can create, edit and delete band and members nodes.
    */
   function testContentPermissions() {
 
-    // Assert content type exists.
+    // Create User.
+    $user = $this->createUser(array('create simpletest_example content'));
 
     // Create band member.
     $node = \Drupal\node\Entity\Node::create(array('type' => 'members', 'title' => 'Eminem'));
+    debug($node->nid);
   }
 }
